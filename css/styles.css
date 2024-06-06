@@ -1,0 +1,194 @@
+.helloworld{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    display: grid;
+    place-items: center;
+}
+
+.logo img{
+    margin-top: 5px;
+    border-radius: 24px;
+    width: 250px;
+    height: 250px;
+}
+
+
+.header__content{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.nav__link{
+    color: red;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.nav__link:hover{
+    color: black;
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #e8f0f7;
+}
+
+.header{
+    background-color: #e8f0f7;
+}
+
+.insta_logo {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+}
+
+.insta_logo .insta {
+    display: flex; /* Ensures the anchor element fills its content horizontally */
+}
+
+.insta_logo .insta .instaglyph {
+    width: 18px; /* Ensures the image doesn't exceed the container width */
+    height: 18px; /* Ensures the image doesn't exceed the container height */
+    transition: filter 0.7s ease; /* Smooth transition */
+    filter: blur(1px) opacity(0.8);
+}
+
+.insta_logo .insta:hover .instaglyph {
+    filter:  brightness(0.8);
+}
+
+.col1{
+    border-radius: 24px;
+}
+
+.sid{
+    font-family: "League Spartan", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.pat{
+    margin-top: -45px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.back-to-top{
+    text-align: center;
+}    
+
+.prt1{
+    width: 100%;
+}
+
+.prt2{
+    width: 100%;
+    height: 100%;
+}
+
+.container
+{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.art-gallery
+{
+    display: flex;
+    gap: 5px;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.photos img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media(max-width: 768px)
+{
+    .art-gallery, .title, .nav__list, .insta
+    {
+        flex-direction: column;
+    }
+
+    .insta
+    {
+        margin-top: 10%;
+        align-items: center;
+        margin-left: 25px;
+    }
+}
+
+/* back to top*/
+.back-to-top
+{
+    background-color: red;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.2 ease-out;
+}
+
+.back-to-top span
+{
+    color: #fff;
+    font-size: 3rem;
+    transition: 0.2 ease-out;
+}
+
+.back-to-top:hover
+{
+    background-color: black;
+    transition: 0.5s ease-out;
+}
+.back-to-top:hover span
+{
+    transform: translateY(-4px);
+}
+.back-to-top.clicked  :hover
+{
+    background-color: black; /* Adjust the style for the clicked state if needed */
+    transition: 0.5s ease-out;
+}
