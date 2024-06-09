@@ -192,3 +192,11 @@ body{
     background-color: black; /* Adjust the style for the clicked state if needed */
     transition: 0.5s ease-out;
 }
+
+.footer
+{
+    text-align: center;
+    background-color: black;
+    color: red;
+    font-family: "League Spartan", sans-serif;
+}
