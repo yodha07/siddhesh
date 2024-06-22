@@ -13,10 +13,7 @@ a{
 }
 
 .logo img{
-    margin-top: 5px;
-    border-radius: 24px;
-    width: 250px;
-    height: 250px;
+    height: 50dvh;
 }
 
 
