@@ -2,6 +2,39 @@
     text-align: center;
 }
 
+body{
+    display: grid;
+    grid-template-areas: 
+    'logo '
+    'nav'
+    'content';
+    grid-template-rows: 1fr, .5fr, .5fr;
+    gap: 10px;
+}
+
+.work1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box1{
+    height: 50dvh;
+    width: 500px;
+    filter:saturate(.2)
+}
+
+.box1 img{
+    height: inherit;
+    width: inherit;
+}
+
+.box2{
+    background-color: red;
+    height: 50dvh;
+    width: 1100px;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -16,15 +49,11 @@ a{
     height: 50dvh;
 }
 
-
 .header__content{
-    height: 60px;
+    grid-area: nav;
     display: flex;
-    align-items: center;
-    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .nav__link{
@@ -52,30 +81,6 @@ ul{
 body{
     font-family: 'Inter', sans-serif;
     background-color: #e8f0f7;
-}
-
-.header{
-    background-color: #e8f0f7;
-}
-
-.insta_logo {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-}
-
-.insta_logo .insta {
-    display: flex; /* Ensures the anchor element fills its content horizontally */
-}
-
-.insta_logo .insta .instaglyph {
-    width: 18px; /* Ensures the image doesn't exceed the container width */
-    height: 18px; /* Ensures the image doesn't exceed the container height */
-    transition: filter 0.7s ease; /* Smooth transition */
-    filter: blur(1px) opacity(0.8);
-}
-
-.insta_logo .insta:hover .instaglyph {
-    filter:  brightness(0.8);
 }
 
 .col1{
@@ -139,6 +144,10 @@ body{
 
 @media(max-width: 768px)
 {
+    .logo img{
+        height: 25dvh;
+    }
+
     .art-gallery, .title, .nav__list, .insta
     {
         flex-direction: column;
