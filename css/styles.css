@@ -7,22 +7,51 @@ body{
     grid-template-areas: 
     'logo '
     'nav'
-    'content';
-    grid-template-rows: 1fr, .5fr, .5fr;
+    'content'
+    'content1'
+    'content2';
+    grid-template-rows: auto auto 1fr;
     gap: 10px;
 }
 
 .work1{
     display: flex;
+    grid-area: content;
     gap: 20px;
     justify-content: center;
 }
 
+.work2{
+    display: flex;
+    grid-area: content1;
+    gap: 20px;
+    justify-content: center;
+}
+
+.work3{
+    display: flex;
+    grid-area: content2;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box1, .box2 {
+    position: relative; /* Needed for the absolute positioning of hover text */
+    filter: saturate(.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .box1{
-    height: 50dvh;
-    width: 500px;
+    position: relative;
+    height: 65dvh;
+    width: 650px;
     filter:saturate(.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box1:hover , .box2:hover{
+    filter:saturate(1);
+    transition: .5s ease-out;
 }
 
 .box1 img{
@@ -31,14 +60,45 @@ body{
 }
 
 .box2{
-    background-color: red;
-    height: 50dvh;
+    position: relative;
+    height: 65dvh;
     width: 1100px;
+    filter:saturate(.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box2 img{
     height: inherit;
     width: inherit;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    text-align: center;
+}
+
+.box1:hover .hover-text, .box2:hover .hover-text{
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+    .work1 {
+        flex-direction: column;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        height: auto;
+    }
 }
 
 a{
@@ -48,6 +108,7 @@ a{
 
 .logo{
     display: grid;
+    grid-area: logo;
     place-items: center;
 }
 
@@ -58,7 +119,6 @@ a{
 .header__content{
     grid-area: nav;
     display: flex;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -91,19 +151,6 @@ body{
 
 .col1{
     border-radius: 24px;
-}
-
-.sid{
-    font-family: "League Spartan", sans-serif;
-    font-size: 80px;
-    font-weight: 600;
-}
-
-.pat{
-    margin-top: -45px;
-    font-family: "League Spartan", sans-serif;
-    font-size: 80px;
-    font-weight: 600;
 }
 
 .back-to-top{
@@ -207,6 +254,7 @@ body{
 
 .footer
 {
+    height: 15dvh;
     text-align: center;
     background-color: black;
     color: red;
