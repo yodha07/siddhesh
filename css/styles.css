@@ -194,7 +194,7 @@ a{
 .nav__link{
     color: red;
     font-family: "League Spartan", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     transition: all 0.2s;
 }
@@ -326,12 +326,16 @@ body{
         font-size: 2rem;
     }
 
+    .nav__link{
+        font-size: 1.5rem;
+    }
+
     /* Footer adjustments for mobile */
     .footer {
         height: auto;
         padding: 1rem 0;
     }
-
+    
 }
 /* back to top*/
 .back-to-top
