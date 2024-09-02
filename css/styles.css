@@ -71,14 +71,12 @@ body{
 
 .box1, .box2 {
     position: relative; /* Needed for the absolute positioning of hover text */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box1{
     position: relative;
     height: 65dvh;
     width: 750px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box1:hover, .box2:hover, .box6-1:hover, .box6-2:hover, .box6-3:hover{
