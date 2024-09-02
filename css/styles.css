@@ -77,7 +77,7 @@ body{
 .box1{
     position: relative;
     height: 65dvh;
-    width: 650px;
+    width: 750px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -101,7 +101,7 @@ body{
 .box6-2{
     position: relative;
     height: 65dvh;
-    width: 577px;
+    width: 611px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -113,7 +113,7 @@ body{
 .box6-1{
     position: relative;
     height: 65dvh;
-    width: 577px;
+    width: 611px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -125,7 +125,7 @@ body{
 .box6-3{
     position: relative;
     height: 65dvh;
-    width: 577px;
+    width: 611px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -162,6 +162,11 @@ body{
 @media(max-width: 768px) {
     .work1 {
         flex-direction: column;
+    }
+
+    .box1, .box2{
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -261,7 +266,7 @@ body{
     object-fit: cover;
 }
 
-@media(max-width: 768px)
+@media(max-width: 1080px)
 {
     .logo img{
         height: 25dvh;
