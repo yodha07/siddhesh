@@ -38,4 +38,3 @@ if (!localStorage.getItem('reloaded')) {
         }, 1000);
     }
 
-    

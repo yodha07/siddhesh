@@ -17,6 +17,16 @@ body{
     gap: 10px;
 }
 
+.body1{
+    display: grid;
+    grid-template-areas: 
+    'logo '
+    'nav'
+    'content';
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+}
+
 .work1{
     display: flex;
     grid-area: content;
@@ -227,16 +237,18 @@ body{
 
 .container
 {
-    max-width: 1224px;
-    width: 90%;
+    grid-area: content;
+    display: contents   ;
+    width: 100%;
     margin: auto;
-    padding: 40px 0;
 }
 
 .art-gallery
 {
     display: flex;
     gap: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .column
