@@ -89,7 +89,7 @@ body{
     width: inherit;
 }
 
-.box1 img:hover, .box2 img:hover{
+.box1 img:hover, .box2 img:hover, .box6-1 img:hover, .box6-2 img:hover, .box6-3 img:hover{
     filter: blur(2.5px);
     transition: .5s ease-out;
 }
