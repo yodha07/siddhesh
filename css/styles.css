@@ -76,7 +76,7 @@ body{
 .box1{
     position: relative;
     height: 65dvh;
-    width: 750px;
+    width: 650px;
 }
 
 .box1:hover, .box2:hover, .box6-1:hover, .box6-2:hover, .box6-3:hover{
@@ -103,7 +103,7 @@ body{
 .box6-2{
     position: relative;
     height: 65dvh;
-    width: 611px;
+    width: 577px;
 }
 
 .box6-2 img{
@@ -114,7 +114,7 @@ body{
 .box6-1{
     position: relative;
     height: 65dvh;
-    width: 611px;
+    width: 577px;
 }
 
 .box6-1 img{
@@ -125,7 +125,7 @@ body{
 .box6-3{
     position: relative;
     height: 65dvh;
-    width: 611px;
+    width: 577px;
 }
 
 .box6-3 img{
