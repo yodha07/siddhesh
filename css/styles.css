@@ -27,16 +27,6 @@ body{
     gap: 10px;
 }
 
-.body2{
-    display: grid;
-    grid-template-areas: 
-    'logo '
-    'nav'
-    'empty content empty';
-    grid-template-rows: auto auto 1fr;
-    gap: 10px;
-}
-
 .work1{
     display: flex;
     grid-area: content;
@@ -381,4 +371,8 @@ body{
 
 .desc{
     grid-area: content;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-family: "League Spartan", sans-serif;
+    font-size: larger;
 }
